@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>CiclosBike | Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <script src="contacto.js" type="text/javascript"></script>
+</head>
+
+<body onload=display_ct();>
+<div class="banner"><img src="https://10mejores.es/wp-content/uploads/2018/11/banner-bicis-tienda-bcn.jpg" alt="Banner tienda 1500x440"></div>
+    <center>
+        <div class="menu">
+            <div class="inner">
+                <a href="index.html">Inicio</a>
+                <a href="Destacados Ciclismo.html"> Destacados </a>
+                <a href="Productos Ciclismo.html"> Catálogo </a>
+                <a href="Contacto Ciclismo.html"> Contacto </a>
+            </div>
+        </div>
+    </center>
+    <div class="map">
+        <div class="content">
+            <h1 class="title">Encuéntranos</h1>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Google para Nuestra Tienda</title>
+    <style>
+        /* Estilo para el contenedor del mapa */
+        #map-container {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Estilo para el mapa */
+        #map {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map-container">
+        <!-- Mapa de Google con la dirección proporcionada -->
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.486121672512!2d-4.789407084686828!3d37.88348557974506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d36a6c20892b5%3A0x7045c06b5e3dc9a6!2sCiclos%20Cabello%20Tienda%20y%20taller%20de%20bicicletas%20en%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1647783325249!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+                <p>Ciclos Bike, Córdoba</p>
+            </div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="form">
+            <div class="content">
+                <h1 class="title">Envíanos un correo</h1>
+                <div class="content2">
+                    <form action="mailto:bicicletas@ciclosbike.com" method="post" enctype="text/plain">
+                        Nombre:<br>
+                        <input type="text" name="name" placeholder="Escriba su nombre aquí"><br>
+                        Correo:<br>
+                        <input type="text" name="email" placeholder="Escriba su correo aquí"><br>
+                        Comentario:<br>
+                        <textarea id="w3review" name="comment" rows="10" cols="100"
+                            placeholder="Escriba su comentario aqui"></textarea><br><br>
+                        <button type="submit" value="Send" onclick="correo()">Enviar</button>
+                        <button type="reset" value="Reset">Reiniciar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="otros">
+            <div class="content">
+                <h1 class="title">Otras formas de contacto</h1>
+                <div class="content2">
+                    <ul>
+                        <li>Llámanos al<a href="tel:+33946335644">+33 946 33 56 44</a></li>
+                        <div class="drive">
+                            <li>Para consultas acerca de test-drive, escríbenos a <a
+                                    href="mailto:bicicletas@ciclosbike.com">bicicletas@ciclosbike.com</a></li>
+
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<footer>
+    <center>(Creado por Jorge Moreno Fragueiro 2ºBach A) 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reloj de España</title>
+</head>
+<body>
+  <div id="clock"></div>
+
+  <script>
+    function mostrarHora() {
+      document.getElementById('clock').innerText = new Date().toLocaleTimeString('es-ES');
+    }
+    setInterval(mostrarHora, 1000);
+    mostrarHora();
+  </script>
+</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fecha Actual</title>
+  <script>
+    // Función para mostrar la fecha actual
+    function mostrarFechaActual() {
+      var fechaActual = new Date();
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      var fechaFormateada = fechaActual.toLocaleDateString('es-ES', options);
+
+      document.getElementById('fecha-actual').textContent = fechaFormateada;
+    }
+
+    // Llamada a la función inicial para mostrar la fecha actual
+    window.onload = function() {
+      mostrarFechaActual();
+    }
+  </script>
+</head>
+<body>
+  <p>La fecha actual es: <span id="fecha-actual"></span></p>
+</body>
+
+
+</footer>
+
+</html>
